@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <title>Inscription en Ligne - Plateforme Événements Universitaires</title>
+</head>
+<body>
+    <header>
+        <h1>Inscription en Ligne - Plateforme Événements Universitaires</h1>
+    </header>
+
+    <section id="formulaire">
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mot_de_passe">Mot de passe :</label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+
+            <label for="role">Role</label>
+            <select name="role" id="role">
+                <option value="" selected>Role</option>
+                <option value="">Administrateur</option>
+                <option value="">Etudiant(e)</option>
+                
+            </select>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Plateforme Événements Universitaires</p>
+    </footer>
+</body>
+</html>
